@@ -1,0 +1,31 @@
+[project]
+name = "rportable"
+version = "2.10.1"
+description = "R-Studio built with the portable Apps Framework"
+authors = [
+    {name = "James Parrott", email = "james.parrott@proton.me"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]   
+"Homepage" = "https://sourceforge.net/projects/rportable/"
+"Bug Tracker" = "https://github.com/JamesParrott/Dockerfile_generator/issues"
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+includes = ["rportable", "launcher_scripts"]
+
+[tool.pdm.build.wheel-data]
+# Install all files under scripts/ to the $prefix/bin directory.
+scripts = ["launcher_scripts/*"]
