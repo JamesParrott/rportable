@@ -24,8 +24,14 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.build]
-includes = ["rportable", "launcher_scripts"]
+# package-dir = "rportable"
+includes=["rportable"]
+# The pre build script/hook copies launcher_scripts into pre_built_bin,
+# so they get included, and can be linked from the path below.
+# This is to keep things tidy, in as few dirs as possible for 
+# the user.  
+custom-hook = "pdm_build.py"
 
 [tool.pdm.build.wheel-data]
 # Install all files under scripts/ to the $prefix/bin directory.
-scripts = ["launcher_scripts/*"]
+scripts = ["rportable/launcher_scripts/*"]
