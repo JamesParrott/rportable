@@ -1,5 +1,5 @@
 [project]
-name = "rportable-launcher"
+name = "rportable"
 version = "3.2.3"
 description = "R-Studio built with the portable Apps Framework. "
 authors = [
