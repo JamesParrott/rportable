@@ -1,37 +1,31 @@
 [project]
 name = "rportable-launcher"
-version = "2.10.1"
-description = "R-Studio built with the portable Apps Framework"
+version = "3.2.3"
+description = "R-Studio built with the portable Apps Framework. "
 authors = [
     {name = "James Parrott", email = "james.parrott@proton.me"},
 ]
 dependencies = []
 requires-python = ">=3.8"
 readme = "README.md"
-license = {text = "MIT"}
+license = {file = "LICENSE.md"}
 
 [project.urls]   
 "Homepage" = "https://sourceforge.net/projects/rportable/"
-"Bug Tracker" = "https://github.com/JamesParrott/Dockerfile_generator/issues"
+"Bug Tracker" = "https://github.com/fiftysevendegreesofrad/sdna_plus/issues"
 
 
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
-
 [tool.pdm]
 distribution = true
 
 [tool.pdm.build]
-# package-dir = "rportable"
-includes=["rportable"]
-# The pre build script/hook copies launcher_scripts into pre_built_bin,
-# so they get included, and can be linked from the path below.
-# This is to keep things tidy, in as few dirs as possible for 
-# the user.  
-custom-hook = "pdm_build.py"
+includes=["rportable", "rportable_launcher_scripts"]
+
 
 [tool.pdm.build.wheel-data]
 # Install all files under scripts/ to the $prefix/bin directory.
-scripts = ["rportable/launcher_scripts/*"]
+scripts = ["rportable_launcher_scripts/*"]
