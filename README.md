@@ -2,9 +2,10 @@
 R Portable v3.2.3 packaged for PyPi.  
 
 This library is intended for internal use only by sdna_plus, 
-(in particular to allow moving this code outside that project, into
-an optional dependency) but let James know if you have other uses 
-for Python wheels of R Portable.
+(in particular to allow moving this code outside that project, to 
+be used as an optional dependency).  But let James know if you 
+have other uses for Python wheels of R Portable, or want more 
+launcher scripts.
 
 The wheel contains the R Portable code (version 3.2.3) bundled with sDNA,
 but all the R Portable installers are available 
