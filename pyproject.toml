@@ -32,6 +32,7 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.build]
+is-purelib = false
 includes=["rportable", "rportable_launcher_scripts"]
 
 
