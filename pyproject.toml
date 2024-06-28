@@ -3,16 +3,25 @@ name = "rportable"
 version = "3.2.3"
 description = "R-Studio built with the portable Apps Framework. "
 authors = [
+    {name = "Andrew Redd"},
     {name = "James Parrott", email = "james.parrott@proton.me"},
 ]
 dependencies = []
 requires-python = ">=3.8"
 readme = "README.md"
 license = {file = "LICENSE.md"}
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Environment :: Win32 (MS Windows)",
+    "Operating System :: Microsoft :: Windows",
+]
 
 [project.urls]   
 "Homepage" = "https://sourceforge.net/projects/rportable/"
 "Bug Tracker" = "https://github.com/fiftysevendegreesofrad/sdna_plus/issues"
+
 
 
 [build-system]
@@ -27,5 +36,4 @@ includes=["rportable", "rportable_launcher_scripts"]
 
 
 [tool.pdm.build.wheel-data]
-# Install all files under scripts/ to the $prefix/bin directory.
 scripts = ["rportable_launcher_scripts/*"]
