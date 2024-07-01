@@ -8,8 +8,6 @@ authors = [
 ]
 dependencies = []
 requires-python = ">=3.8"
-readme = "README.md"
-license = {file = "LICENSE.md"}
 classifiers = [
     "Development Status :: 6 - Mature",
     "Topic :: Scientific/Engineering :: Mathematics",

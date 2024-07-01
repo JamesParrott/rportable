@@ -1,5 +1,5 @@
 [project]
-name = "rportable"
+name = "rportable-docs"
 version = "3.2.3"
 description = "R-Studio built with the portable Apps Framework. "
 authors = [
@@ -8,13 +8,10 @@ authors = [
 ]
 dependencies = []
 requires-python = ">=3.8"
-readme = "README.md"
-license = {file = "LICENSE.md"}
 classifiers = [
     "Development Status :: 6 - Mature",
     "Topic :: Scientific/Engineering :: Mathematics",
     "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
-    "Operating System :: Microsoft :: Windows",
 ]
 
 [project.urls]   
@@ -32,8 +29,6 @@ distribution = true
 
 [tool.pdm.build]
 is-purelib = false
-includes=["rportable", "rportable_launcher_scripts"]
+includes=["rportable"]
 
 
-[tool.pdm.build.wheel-data]
-scripts = ["rportable_launcher_scripts/*"]
