@@ -14,7 +14,6 @@ classifiers = [
     "Development Status :: 6 - Mature",
     "Topic :: Scientific/Engineering :: Mathematics",
     "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
-    "Environment :: Win32 (MS Windows)",
     "Operating System :: Microsoft :: Windows",
 ]
 
