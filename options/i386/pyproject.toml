@@ -19,7 +19,8 @@ classifiers = [
 ]
 
 [project.urls]   
-"Homepage" = "https://sourceforge.net/projects/rportable/"
+"R Portable homepage" = "https://sourceforge.net/projects/rportable/"
+"R Portable for PyPi" = "https://github.com/JamesParrott/rportable"
 "Bug Tracker" = "https://github.com/fiftysevendegreesofrad/sdna_plus/issues"
 
 
