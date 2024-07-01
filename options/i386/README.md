@@ -1,18 +1,13 @@
 # R Portable Launcher
 
-## Binaries
-This is a binary packaged.  i386 and x64 binaries are available as optional dependencies.
-One of the two options is required for a working installation:
+## Win 32 (i386) binaries for R portable
+
+x64 binaries are available too: `pip install rportable[x64]`, but 
+historically sDNA has used these.
 
 ```
 pip install rportable[i386]
 ```
-
-```
-pip install rportable[x64]
-```
-
-Both should not be necessary, but R Portable ships with both.
 
 ## R Portable base
 

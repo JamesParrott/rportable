@@ -17,8 +17,14 @@ classifiers = [
     "Operating System :: Microsoft :: Windows",
 ]
 
+[project.optional-dependencies]
+"i386" = ["rportable-i386"]
+"x64" = ["rportable-x64"]
+"docs" = ["rportable-docs"]
+
 [project.urls]   
-"Homepage" = "https://sourceforge.net/projects/rportable/"
+"R Portable homepage" = "https://sourceforge.net/projects/rportable/"
+"R Portable for PyPi" = "https://github.com/JamesParrott/rportable"
 "Bug Tracker" = "https://github.com/fiftysevendegreesofrad/sdna_plus/issues"
 
 

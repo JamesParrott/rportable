@@ -1,21 +1,12 @@
 # R Portable Launcher
 
-## Binaries
-This is a binary packaged.  i386 and x64 binaries are available as optional dependencies.
-One of the two options is required for a working installation:
-
-```
-pip install rportable[i386]
-```
+## x64 binaries for R portable
 
 ```
 pip install rportable[x64]
 ```
 
-Both should not be necessary, but R Portable ships with both.
-
-## R Portable base
-
+## R portable base
 R Portable v3.2.3 packaged for installation via with pip (Python's package manager).  
 
 This library is intended for internal use only by sdna_plus, 
